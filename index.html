@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>JavaScript Fundamentals</header>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+      <a href="#Variables_and_Data_Types" class="nav-link">Variables and Data Types</a>
+      <a href="#Functions" class="nav-link">Functions</a>
+      <a href="#Conditionals_and_Loops" class="nav-link">Conditionals and Loops</a>
+      <a href="#DOM_Manipulation" class="nav-link">DOM Manipulation</a>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introduction" class="main-section">
+        <header>Introduction</header>
+        <p>JavaScript is a lightweight, interpreted programming language that adds interactivity to web pages. It runs in the browser and can also be used on servers through environments like Node.js.</p>
+        <p>Originally created to make websites dynamic, JavaScript has evolved into one of the most popular languages in the world, used for both frontend and backend development.</p>
+        <p>Its supported by all major browsers and can manipulate HTML, CSS, and handle user events.</p>
+        <code>console.log("Hello, JavaScript!");</code>
+        <p>The line above prints a message in the browser console — a common first step for every developer learning the language.</p>
+      </section>
+
+      <section id="Variables_and_Data_Types" class="main-section">
+        <header>Variables and Data Types</header>
+        <p>Variables are used to store information that can be referenced and manipulated later. In JavaScript, you can declare them using <code>let</code>, <code>const</code>, or <code>var</code>.</p>
+        <code>let name = "Alice";</code>
+        <code>const year = 2025;</code>
+        <code>var isLearning = true;</code>
+        <p>JavaScript supports several data types, including strings, numbers, booleans, objects, and arrays.</p>
+        <ul>
+          <li>String: represents text, e.g., "Hello"</li>
+          <li>Number: any numeric value, e.g., 42</li>
+          <li>Boolean: true or false</li>
+          <li>Object: a collection of key-value pairs</li>
+          <li>Array: an ordered list of items</li>
+        </ul>
+      </section>
+
+      <section id="Functions" class="main-section">
+        <header>Functions</header>
+        <p>Functions are blocks of reusable code designed to perform specific tasks. They can take parameters and return values.</p>
+        <code>function greet(name) { return "Hello, " + name + "!"; }</code>
+        <p>The code above defines a function called <code>greet</code> that takes one parameter and returns a greeting message.</p>
+        <p>Functions can also be written using arrow syntax, which provides a more concise way to define them.</p>
+        <code>const greetArrow = (name) => "Hello, " + name + "!";</code>
+        <p>Both versions work the same way, but arrow functions are especially useful in modern JavaScript applications.</p>
+      </section>
+
+      <section id="Conditionals_and_Loops" class="main-section">
+        <header>Conditionals and Loops</header>
+        <p>Conditionals help control the flow of a program by executing code only if certain conditions are met.</p>
+        <code>
+      if (age >= 18) {
+        console.log("You are an adult.");
+      } else {
+        console.log("You are underage.");
+      }
+        </code>
+        <p>Loops allow repeating a block of code multiple times. The most common ones are <code>for</code>, <code>while</code>, and <code>for...of</code>.</p>
+        <ul>
+          <li><code>for</code>: runs a fixed number of times</li>
+          <li><code>while</code>: runs while a condition is true</li>
+          <li><code>for...of</code>: iterates over arrays or iterable objects</li>
+        </ul>
+        <code>
+      for (let i = 0; i < 5; i++) {
+        console.log("Count:", i);
+      }
+        </code>
+        <p>This loop prints numbers from 0 to 4 in the console.</p>
+      </section>
+
+      <section id="DOM_Manipulation" class="main-section">
+        <header>DOM Manipulation</header>
+        <p>The Document Object Model (DOM) represents the structure of a webpage. JavaScript can interact with it to modify content dynamically.</p>
+        <p>You can select HTML elements using methods like <code>getElementById()</code> or <code>querySelector()</code>.</p>
+        <code>const title = document.getElementById("main-title");</code>
+        <code>title.textContent = "Updated Title";</code>
+        <p>This example finds an element with the id "main-title" and changes its text.</p>
+        <ul>
+          <li>Change text or attributes</li>
+          <li>Add or remove elements</li>
+          <li>Respond to user events</li>
+          <li>Update styles dynamically</li>
+        </ul>
+        <p>DOM manipulation is the foundation of modern interactive web pages and frameworks like React are built on this concept.</p>
+      </section>
+
+    </main>
+
+  </body>
+</html>
